@@ -49,5 +49,6 @@ security_groups_inbound_groups.each do |destination, source_ids|
     end
     g.add_edges(key_for_group_name_to_id[ingress_id],destination)
   end
-  g.output( :png => "security_groups_connections.png" )
 end
+g.output( :png => "security_groups_connections.png" )
+
